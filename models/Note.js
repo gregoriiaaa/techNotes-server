@@ -1,4 +1,4 @@
-const mongoose = require("mogoose");
+const mongoose = require("mongoose");
 const { mongo } = require("mongoose");
 const AutoIncrement = require("mongoose-sequence")(mongoose);
 

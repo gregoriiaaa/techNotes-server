@@ -26,7 +26,8 @@ app.use(cookieParser());
 
 app.use("/", express.static(path.join(__dirname, "/public")));
 
-app.use("/", require("./routes/root"));
+app.use("/", require("./routes/root")); // this is how we route to our index page at localhost:3500
+app.use("/users", require("./routes/userRoutes"));
 
 app.all("*", (req, res) => {
   res.status(404);
