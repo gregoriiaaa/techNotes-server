@@ -22,6 +22,7 @@ const noteSchema = new mongoose.Schema(
       default: false,
     },
   },
+  // timestamps is an option, and when set to true, MongoDB will give us both created at and updated at timestamps
   {
     timestamps: true,
   }
